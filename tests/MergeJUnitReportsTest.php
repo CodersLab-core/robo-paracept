@@ -40,7 +40,7 @@ class MergeJUnitReportsTest extends \PHPUnit\Framework\TestCase
         $this->assertContains('<testcase name="testBasic" class="GenerateCestTest"', $xml, 'from second file');
     }
 
-    public function setUp()
+    public function setUp(): void
     {
         @mkdir('tests/result');
         @unlink('tests/result/merged.xml');

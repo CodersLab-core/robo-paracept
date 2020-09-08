@@ -92,7 +92,7 @@ class SplitTestsByGroupsTaskTest extends \PHPUnit\Framework\TestCase
         self::assertSame(['Example2Test.php:testE', 'Example2Test.php:testD', 'Example3Test.php:testF', 'Example3Test.php:testG'], $lines);
     }
 
-    public function setUp()
+    public function setUp(): void
     {
         @mkdir('tests/result');
 
